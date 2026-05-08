@@ -1,0 +1,35 @@
+html, body { padding: 0; margin: 0; background-color: #c1bfba;}
+.no-padding { padding:0;}
+
+canvas {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#game {
+    background-color: #575662;
+}
+
+#rotate-overlay {
+    display: none;
+}
+
+@media (max-width: 992px) and (orientation: portrait) {
+    #rotate-overlay {
+        display: block;
+        background-color: black;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index:10;
+        color: white;
+    }
+	
+	.rotate {
+		position: relative; 
+		height: 100%; 
+		margin: 0 auto;
+	}
+}
